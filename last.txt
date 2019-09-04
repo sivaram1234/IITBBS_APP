@@ -1,0 +1,45 @@
+-----
+public void websiteClick(View view){
+        Toast.makeText(this, "Opening Official IIT BBS website", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.iitbbs.ac.in/"));
+        startActivity(intent);
+        }
+
+public void erpClick(View view){
+        Toast.makeText(this, "Opening ERP", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://erp.iitbbs.ac.in/"));
+        startActivity(intent);
+        }
+
+
+
+public void reload(View view){
+        Toast.makeText(this, "Refreshing page", Toast.LENGTH_SHORT).show();
+
+final WebView webview = findViewById(R.id.webView_mainpage);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.setWebViewClient(new WebViewClient());
+        webview.loadUrl("https://verasi.000webhostapp.com/");
+        webview.setWebViewClient(new WebViewClient(){
+public void onReceivedError(WebView view,int errorCode,String description ,String failingUrl){
+        webview.loadUrl("file:///android_asset/error.html");
+        }
+        });
+
+        }
+
+
+
+.....
+ //https://verasi.000webhostapp.com/
+        final WebView webview = findViewById(R.id.webView_mainpage);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.setWebViewClient(new WebViewClient());
+        webview.loadUrl("https://verasi.000webhostapp.com/");
+        webview.setWebViewClient(new WebViewClient(){
+            public void onReceivedError(WebView view,int errorCode,String description ,String failiongUrl){
+                webview.loadUrl("file:///android_asset/error.html");
+            }
+        });

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kalyan.application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iitbbs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iitbbs"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".lostfound_Activity"
+            android:label="@string/lostfound"></activity>
+        <activity android:name=".about_Activity"
+            android:label="@string/action_aboutapp"/>
+        <activity
+            android:name=".hostelOfiice_Contacts"
+            android:label="@string/action_hostelContacts" />
+        <activity
+            android:name=".exam_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".phd_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".sms_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".smmme_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".sif_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".ee_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".cse_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".ece_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".seocs_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".sbs_tt_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".First_Sem_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".Time_Table_Activity"
+            android:label="@string/Time_Table" />
+        <activity
+            android:name=".Holidays_Activity"
+            android:label="@string/holidays_list" />
+        <activity
+            android:name=".Bus_Schedule_Activity"
+            android:label="@string/Bus_Schedule" />
+        <activity
+            android:name=".Contact_us_Activity"
+            android:label="@string/Contact_us" />
+        <activity
+            android:name=".bovTariffPDF"
+            android:label="@string/action_BOV_tariff" />
+        <activity
+            android:name=".AcademicCalenderView_Activity"
+            android:label="@string/academicCalender" />
+        <activity
+            android:name=".AcademicCalender_Activity"
+            android:label="@string/academicCalender" />
+        <activity
+            android:name=".otherActivity"
+            android:label="@string/useful_links" />
+        <activity
+            android:name=".contactsActivity"
+            android:label="@string/contact" />
+        <activity
+            android:name=".bovActivity"
+            android:label="@string/action_BOV" />
+        <activity
+            android:name=".Auto_Service"
+            android:label="@string/action_auto_service" />
+        <activity
+            android:name=".AmbulanceActivity"
+            android:label="@string/nav_ambulance_Activity" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/nav_header_subtitle"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

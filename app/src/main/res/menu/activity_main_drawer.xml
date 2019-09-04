@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Academics">
+            <menu>
+                <item
+                    android:id="@+id/nav_timetable"
+                    android:icon="@drawable/timetable"
+                    android:title="@string/action_timetable" />
+                <item
+                    android:id="@+id/nav_academic_calender"
+                    android:icon="@drawable/calender"
+                    android:title="@string/action_academic_calender" />
+                <item
+                    android:id="@+id/nav_holidays_list"
+                    android:icon="@drawable/holidays"
+                    android:title="@string/action_holidays_list" />
+                <item
+                    android:id="@+id/nav_curriculum"
+                    android:icon="@drawable/curriculum"
+                    android:title="@string/action_curriculum" />
+                <item
+                    android:id="@+id/nav_ERP"
+                    android:icon="@drawable/erp"
+                    android:title="@string/action_ERP" />
+                <item
+                    android:id="@+id/nav_central_library"
+                    android:icon="@drawable/library_18dp"
+                    android:title="@string/action_central_library" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Transportation Services">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_bus_schedule"
+                    android:icon="@drawable/bus_18dp"
+                    android:title="@string/action_bus_schedule" />
+                <item
+                    android:id="@+id/nav_bov"
+                    android:icon="@drawable/car"
+                    android:title="@string/action_BOV" />
+                <item
+                    android:id="@+id/nav_ambulance"
+                    android:icon="@drawable/ambulance"
+                    android:title="@string/action_ambulance" />
+                <item
+                    android:id="@+id/nav_auto_service"
+                    android:icon="@drawable/auto"
+                    android:title="@string/action_Autos" />
+            </menu>
+        </item>
+    </group >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/map"
+            android:title="@string/action_map" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/call"
+            android:title="@string/action_contacts" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mess_menu"
+            android:icon="@drawable/mess"
+            android:title="@string/action_mess_menu" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_useful_websites_and_pages"
+            android:icon="@drawable/globe"
+            android:title="@string/action_useful_websites_and_pages" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lostAndFound"
+            android:icon="@drawable/lostandfound"
+            android:title="@string/action_lostfound" />
+    </group>
+
+
+
+</menu>
